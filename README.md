@@ -9,6 +9,7 @@ Frontend:
 Backend:
   - Express.js
   - Node.js
+  - Typescript
   - (Redis: Coming soon)
 
 Database:
