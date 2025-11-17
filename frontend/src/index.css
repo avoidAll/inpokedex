@@ -1,0 +1,29 @@
+
+/* 기본 리셋 */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%; /* 브라우저 전체 너비 사용 */
+  min-height: 100vh; /* 브라우저 전체 높이 사용 */
+  box-sizing: border-box; /* 패딩, 보더가 너비/높이에 포함되도록 */
+}
+
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: #242424; */
+  /* App.css의 #root 배경과 다를 경우 통일 */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%; /* #root가 부모(body)의 100% 너비를 차지하도록 명시적으로 설정 */
+}

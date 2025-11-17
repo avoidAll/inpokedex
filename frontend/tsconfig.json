@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "jsx": "react-jsx",
+    "types": ["vite/client"],
+    /* 프로젝트 설정 */
+    "target": "esnext",
+    "module": "esnext",
+    "outDir": "./dist",                         /* 컴파일된 JavaScript 파일을 저장할 출력 디렉토리. */
+    "rootDir": "./src",                         /* TypeScript 소스 코드 파일의 루트 디렉토리. */
+
+    /* 엄격도 및 코드 품질 검사 */
+    "strict": true,                             /* 모든 엄격한 타입 검사 옵션을 활성화. */
+    "esModuleInterop": true,                    /* CommonJS/AMD 모듈에서 ES6 모듈 가져오기를 가능하게 합니다. */
+    "forceConsistentCasingInFileNames": true,   /* 동일한 파일에 대한 일관되지 않은 대소문자 참조를 허용하지 않습니다. */
+    "declaration": true,                        /* '.d.ts' 선언 파일을 생성합니다. (선택 사항) */
+    "sourceMap": true,                          /* '.map' 파일을 생성하여 디버깅을 돕습니다. */
+
+    /* 모듈 해결 */
+    "moduleResolution": "node",                 /* 'node' 또는 'classic' 중 하나를 지정. */
+    "baseUrl": ".",                             /* 비상대 모듈 가져오기를 위한 기준 디렉토리 */
+    "paths": {                                  /* 'baseUrl'과 관련된 모듈 가져오기를 위한 매핑 (선택 사항) */
+      // "@/*": ["./src/*"]
+    },
+
+    /* 실험적 옵션 (일반적으로 사용하지 않지만 필요 시 활성화) */
+    // "experimentalDecorators": true,           /* ES7 Decorators 실험적 기능 지원 */
+    // "emitDecoratorMetadata": true,            /* Decorator 메타데이터 내보내기 지원 */
+
+    /* 기타 */
+    "skipLibCheck": true,                       /* 선언 파일의 타입 검사를 건너뜁니다. (빌드 속도 향상) */
+  },
+  "include": ["src/**/*"],                      /* 컴파일에 포함할 파일들을 지정 */
+  "exclude": ["node_modules", "dist"]           /* 컴파일에서 제외할 파일들을 지정 */
+}

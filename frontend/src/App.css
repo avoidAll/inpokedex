@@ -1,0 +1,105 @@
+
+#root {
+  max-width: 100%; /* 전체 컨텐츠가 늘어날 수 있는 최대 너비 */
+  margin: 0 auto; /* 중앙 정렬 */
+  padding: 2rem;
+  text-align: center;
+}
+
+.app-container {
+  font-family: 'Arial', sans-serif;
+  width: 100%; /* 부모 (#root)의 너비를 꽉 채우도록 */
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px; /* 제목 아래 여백 추가 */
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px; /* 카드 간격 */
+  padding: 0 20px; /* 그리드 컨테이너의 좌우 패딩. .pokemon-card가 닿지 않도록 */
+  max-width: 1700px; 
+  margin: 0 auto; /* .pokemon-grid 자체를 중앙 정렬 */
+  width: 100%; /* 부모 (#root 또는 .app-container)의 너비를 따름 */
+}
+
+.pokemon-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #EEEEEE;
+  padding: 15px; /* 카드 내부 패딩을 약간 늘립니다. */
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+  display: flex; /* 내부 요소들을 flex로 관리 */
+  flex-direction: column; /* 세로 방향으로 정렬 */
+  align-items: center; /* 가로 중앙 정렬 */
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+}
+
+.pokemon-card img {
+  width: 96px; /* 이미지 크기 고정 */
+  height: 96px;
+  object-fit: contain; /* 이미지 비율 유지 */
+  margin-bottom: 10px; /* 이미지 아래 여백 추가 */
+}
+
+.pokemon-card p {
+  margin: 0;
+  font-weight: bold;
+  color: #555;
+  text-transform: capitalize;
+}
+
+.pokemon-card p:first-child {
+  font-size: 0.8em;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+/* 추가: 포켓몬 타입 스타일링 */
+.pokemon-types {
+  margin-top: 10px;
+  display: flex;
+  gap: 5px; /* 타입 간 간격 */
+  flex-wrap: wrap; /* 타입이 많아지면 다음 줄로 */
+  justify-content: center; /* 타입들 중앙 정렬 */
+}
+
+.pokemon-type {
+  font-size: 0.75em;
+  padding: 3px 8px;
+  border-radius: 5px;
+  color: white;
+  text-transform: capitalize;
+  font-weight: bold;
+  white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 */
+}
+
+/* --- 타입별 배경색 예시 (일부만 추가) --- */
+.노말 { background-color: #A8A878; }
+.불꽃 { background-color: #F08030; }
+.물 { background-color: #6890F0; }
+.풀 { background-color: #78C850; }
+.전기 { background-color: #F8D030; }
+.얼음 { background-color: #98D8D8; }
+.격투 { background-color: #C03028; }
+.독 { background-color: #A040A0; }
+.땅 { background-color: #E0C068; }
+.비행 { background-color: #A890F0; }
+.에스퍼 { background-color: #F85888; }
+.벌레 { background-color: #A8B820; }
+.바위 { background-color: #B8A038; }
+.고스트 { background-color: #705898; }
+.드래곤 { background-color: #7038F8; }
+.강철 { background-color: #B8B8D0; }
+.페어리 { background-color: #EE99AC; }
+/* 나머지 타입들도 필요에 따라 추가 */
+/* --- --- */
